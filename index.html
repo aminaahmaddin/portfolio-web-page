@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class no 36</title>]\;t2
+</head>
+ <body>
+<!-- 
+  <h1>JavaScript Functions</h1>
+  <h2>Callback Functions</h2>
+  
+  <p>The result of the calculation is:</p>
+  <p id="demo"></p> -->
+  <!-- function myDisplayer(something) {
+    document.getElementById("demo").innerHTML = something;
+  }
+  
+  function myCalculator(num1, num2, myCallback) {
+    let sum = num1 + num2;
+    myCallback(sum);
+    console.log(sum);
+  }
+  
+  myCalculator(5, 5, myDisplayer); -->
+  <script>
+ // Create an Array
+const myNumbers = [4, 1, -20, -7, 5, 9, -6];
+
+// Call removeNeg with a callback
+const posNumbers = removeNeg(myNumbers, (x) => x >= 0);
+
+// Display Result
+document.getElementById("demo").innerHTML = posNumbers;
+
+// Keep only positive numbers
+function removeNeg(numbers, callback) {
+  const myArray = [];
+  for (const x of numbers) {
+    if (callback(x)) {
+      myArray.push(x);
+    }
+  }
+  return myArray;
+}
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--calculator -->
+     <!-- <input type="number" placeholder="First_no" id="First_no">
+    <input type="number" placeholder="second_no" id="second_no">
+    
+     <select id="operator" >
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+    </select>
+    <button onclick="converter()">Convert</button>
+    <input type="number" id="output" placeholder="output">  -->
+    <!-- <input type="text" onchange="text_change(event)">
+    <input type="text" oninput="real_text(event)">  -->
+
+
+<!-- <h1 id="head"></h1>
+
+<input type="text" id="text_change"> -->
+
+
+
+    <!-- <script>
+       ///
+        //     function  real_text(e){
+        //     console.log(e.target.value);
+        //     document.getElementById('head').innerHTML= e.target.value
+        // }
+
+
+        // function text_change(e){
+        //     console.log(e.target.value);
+        // }
+        
+function converter(){
+  const First_no =parseFloat(document.getElementById('First_no').value)
+ console.log(First_no);
+ console.log("its working!");
+  const second_no = parseFloat(document.getElementById('second_no').value)
+ console.log(second_no);
+  const operator =document.getElementById('operator').value
+  const output = document.getElementById('output')
+  let result;
+if(operator === '+'){
+  result = First_no + second_no
+}
+else if(operator === '-') {
+  result = First_no - second_no
+}
+else if(operator === '*') {
+  result = First_no * second_no
+}
+else{
+  alert('No operator selected')
+}
+output.value = result
+
+
+ } -->
+
+    </script>
+</body>
+</html>
